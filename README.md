@@ -1,0 +1,5 @@
+# nvim-config
+
+## License
+
+MIT
