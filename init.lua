@@ -6,6 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     "--filter=blob:none",
     "git@github.com:folke/lazy.nvim.git",
     "--branch=stable",
+    "--depth=1",
     lazypath,
   }
 end

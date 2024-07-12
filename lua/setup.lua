@@ -1,3 +1,4 @@
+-- see full docs at `https://lazy.folke.io/configuration`
 require("lazy").setup {
   {
     "AstroNvim/AstroNvim",
@@ -10,7 +11,7 @@ require("lazy").setup {
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
     },
     git = {
-      url_format = "git@github.com:%s.git",
+      url_format = "git@github.com:%s.git", -- Use ssh to fetch remote repos
     },
   },
   { import = "astrocommunity" },
