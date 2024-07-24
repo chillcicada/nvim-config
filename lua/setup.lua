@@ -14,6 +14,16 @@ require("lazy").setup {
       url_format = "git@github.com:%s.git", -- Use ssh to fetch remote repos
     },
   },
-  { import = "astrocommunity" },
-  { import = "plugins" },
+  {
+    import = "astrocommunity",
+    git = {
+      url_format = "git@github.com:%s.git",
+    },
+  },
+  {
+    import = "plugins",
+    git = {
+      url_format = "git@github.com:%s.git",
+    },
+  },
 }
