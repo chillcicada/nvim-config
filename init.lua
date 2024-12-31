@@ -23,4 +23,7 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- wrap lines
+vim.wo.wrap = true
+
 require "setup"
