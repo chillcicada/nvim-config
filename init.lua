@@ -11,6 +11,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   }
 end
 vim.opt.rtp:prepend(lazypath)
+vim.o.linebreak = true
+vim.o.wrap = true
 
 -- validate that lazy is available
 if not pcall(require, "lazy") then
@@ -22,8 +24,5 @@ if not pcall(require, "lazy") then
   vim.fn.getchar()
   vim.cmd.quit()
 end
-
--- wrap lines
-vim.wo.wrap = true
 
 require "setup"

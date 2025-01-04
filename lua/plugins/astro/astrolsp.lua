@@ -109,16 +109,12 @@ return {
           event = { "CursorHold", "CursorHoldI" },
           -- the rest of the autocmd options (:h nvim_create_autocmd)
           desc = "Document Highlighting",
-          callback = function()
-            vim.lsp.buf.document_highlight()
-          end,
+          callback = function() vim.lsp.buf.document_highlight() end,
         },
         {
           event = { "CursorMoved", "CursorMovedI", "BufLeave" },
           desc = "Document Highlighting Clear",
-          callback = function()
-            vim.lsp.buf.clear_references()
-          end,
+          callback = function() vim.lsp.buf.clear_references() end,
         },
       },
     },
@@ -126,9 +122,7 @@ return {
     mappings = {
       n = {
         gl = {
-          function()
-            vim.diagnostic.open_float()
-          end,
+          function() vim.diagnostic.open_float() end,
           desc = "Hover diagnostics",
         },
 
@@ -146,45 +140,31 @@ return {
 
         -- refactoring
         ["<Leader>ri"] = {
-          function()
-            require("refactoring").refactor("Inline Variable")
-          end,
+          function() require("refactoring").refactor "Inline Variable" end,
           desc = "Inverse of extract variable",
         },
         ["<Leader>rb"] = {
-          function()
-            require("refactoring").refactor("Extract Block")
-          end,
+          function() require("refactoring").refactor "Extract Block" end,
           desc = "Extract Block",
         },
         ["<Leader>rbf"] = {
-          function()
-            require("refactoring").refactor("Extract Block To File")
-          end,
+          function() require("refactoring").refactor "Extract Block To File" end,
           desc = "Extract Block To File",
         },
         ["<Leader>rr"] = {
-          function()
-            require("telescope").extensions.refactoring.refactors()
-          end,
+          function() require("telescope").extensions.refactoring.refactors() end,
           desc = "Prompt for a refactor to apply",
         },
         ["<Leader>rp"] = {
-          function()
-            require("refactoring").debug.printf({ below = false })
-          end,
+          function() require("refactoring").debug.printf { below = false } end,
           desc = "Insert print statement to mark the calling of a function",
         },
         ["<Leader>rv"] = {
-          function()
-            require("refactoring").debug.print_var()
-          end,
+          function() require("refactoring").debug.print_var() end,
           desc = "Insert print statement to print a variable",
         },
         ["<Leader>rc"] = {
-          function()
-            require("refactoring").debug.cleanup({})
-          end,
+          function() require("refactoring").debug.cleanup {} end,
           desc = "Cleanup of all generated print statements",
         },
       },
@@ -192,33 +172,23 @@ return {
       x = {
         -- refactoring
         ["<Leader>ri"] = {
-          function()
-            require("refactoring").refactor("Inline Variable")
-          end,
+          function() require("refactoring").refactor "Inline Variable" end,
           desc = "Inverse of extract variable",
         },
         ["<Leader>re"] = {
-          function()
-            require("refactoring").refactor("Extract Function")
-          end,
+          function() require("refactoring").refactor "Extract Function" end,
           desc = "Extracts the selected code to a separate function",
         },
         ["<Leader>rf"] = {
-          function()
-            require("refactoring").refactor("Extract Function To File")
-          end,
+          function() require("refactoring").refactor "Extract Function To File" end,
           desc = "Extract Function To File",
         },
         ["<Leader>rv"] = {
-          function()
-            require("refactoring").refactor("Extract Variable")
-          end,
+          function() require("refactoring").refactor "Extract Variable" end,
           desc = "Extracts occurrences of a selected expression to its own variable",
         },
         ["<Leader>rr"] = {
-          function()
-            require("telescope").extensions.refactoring.refactors()
-          end,
+          function() require("telescope").extensions.refactoring.refactors() end,
           desc = "Prompt for a refactor to apply",
         },
       },
