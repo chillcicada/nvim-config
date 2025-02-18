@@ -58,7 +58,6 @@ return {
       "pyright", -- python
       "ruff", -- extremely fast Python linter and code transformation
       "nil_ls", -- nix language server
-      "buf_ls", -- protocol buffer language server
       "zls", -- zig language server
       ---- Operation & Cloud Nativautoindente
       "bashls", -- bash
