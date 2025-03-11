@@ -17,12 +17,6 @@ return {
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- Language Support
-  ---- Frontend & NodeJS
-  { import = "astrocommunity.pack.typescript-all-in-one" },
-  { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.prisma" },
-  { import = "astrocommunity.pack.vue" },
   ---- Configuration Language
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
@@ -39,7 +33,6 @@ return {
 
   ---- Operation & Cloud Native
   { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.docker" },
 
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },

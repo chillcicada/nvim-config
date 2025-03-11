@@ -21,9 +21,7 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          "jsonnet",
           "rust",
-          "terraform",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -38,35 +36,18 @@ return {
       --   return true
       -- end
     },
-    -- enable servers that you already have installed without mason
     servers = {
-      ---- Frontend & NodeJS
-      "ts_ls", -- typescript/javascript language server
-      "tailwindcss", -- tailwindcss language server
-      "html", -- html language server
-      "cssls", -- css language server
-      "prismals", -- prisma language server
-      "volar", -- vue language server
-      ---- Configuration Language
-      "marksman", -- markdown ls
-      "jsonls", -- json language server
-      "yamlls", -- yaml language server
-      "taplo", -- toml language server
-      ---- Backend
+      "zls", -- zig
+      "ruff", -- py
+      "taplo", -- toml
       "lua_ls", -- lua
-      "rust_analyzer", -- rust
-      "pyright", -- python
-      "ruff", -- extremely fast Python linter and code transformation
-      "nil_ls", -- nix language server
-      "zls", -- zig language server
-      ---- Operation & Cloud Nativautoindente
-      "bashls", -- bash
-      "cmake", -- cmake language server
+      "nil_ls", -- nix
       "clangd", -- c/c++
-      "dockerls", -- dockerfile
-      "jsonnet_ls", -- jsonnet language server
-      "terraformls", -- terraform hcl
-      "scheme_langserver", -- scheme language server
+      "bashls", -- bash
+      "jsonls", -- json
+      "yamlls", -- yaml
+      "marksman", -- markdown
+      "rust_analyzer", -- rust
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -77,10 +58,6 @@ return {
         capabilities = {
           offsetEncoding = "utf-8",
         },
-      },
-      scheme_langserver = {
-        filetypes = { "scheme", "scm" },
-        single_file_support = true,
       },
     },
     -- customize how language servers are attached
