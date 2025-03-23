@@ -34,6 +34,8 @@ return {
         -- The percentage of 'columns' to use for the title
         -- When the title is longer, only the end of the path name is shown.
         titlelen = 20,
+        wrap = true, -- Wrap lines
+        linebreak = true, -- Break lines at word
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

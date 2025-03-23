@@ -10,9 +10,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     lazypath,
   }
 end
+
 vim.opt.rtp:prepend(lazypath)
-vim.o.linebreak = true
-vim.o.wrap = true
 
 -- validate that lazy is available
 if not pcall(require, "lazy") then
