@@ -37,7 +37,6 @@ return {
       -- end
     },
     servers = {
-      "zls", -- zig
       "ruff", -- py
       "taplo", -- toml
       "lua_ls", -- lua
@@ -46,7 +45,6 @@ return {
       "bashls", -- bash
       "jsonls", -- json
       "yamlls", -- yaml
-      "marksman", -- markdown
       "rust_analyzer", -- rust
     },
     -- customize language server configuration options passed to `lspconfig`
