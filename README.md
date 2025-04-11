@@ -14,4 +14,4 @@ degit chillcicada/nvim-config nvim
 
 ## License
 
-MIT
+[MIT](LICENSE)
