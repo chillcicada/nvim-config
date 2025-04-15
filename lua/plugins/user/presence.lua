@@ -13,6 +13,12 @@ return {
     config = function() require("lsp_signature").setup() end,
   },
 
+  {
+    "NStefan002/screenkey.nvim",
+    lazy = false,
+    version = "*",
+  },
+
   -- == Examples of Overriding Plugins ==
 
   -- You can disable default plugins as follows:
