@@ -21,7 +21,7 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          "rust",
+          -- "rust",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -45,7 +45,6 @@ return {
       "bashls", -- bash
       "jsonls", -- json
       "yamlls", -- yaml
-      "rust_analyzer", -- rust
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
