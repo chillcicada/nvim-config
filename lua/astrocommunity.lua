@@ -17,26 +17,9 @@ return {
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- Language Support
-  ---- Configuration Language
-  { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.pack.toml" },
-  ---- Backend / System
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.cmake" },
-  { import = "astrocommunity.pack.cpp" },
-  -- { import = "astrocommunity.pack.nix" },  -- manually add config for nix, comment this one.
-  { import = "astrocommunity.pack.proto" },
-
-  ---- Operation & Cloud Native
-  { import = "astrocommunity.pack.bash" },
-
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
-
   -- Lua implementation of CamelCaseMotion, with extra consideration of punctuation.
   { import = "astrocommunity.motion.nvim-spider" },
   -- AI Assistant

@@ -29,7 +29,7 @@ return {
         signcolumn = "auto", -- Show sign column when used only
         spell = false, -- Spell checking
         swapfile = false, -- Swapfile
-        smartindent = false, -- fix https://github.com/ryan4yin/nix-config/issues/4
+        smartindent = false,
         title = true, -- Set the title of window to `filename [+=-] (path) - NVIM`
         -- The percentage of 'columns' to use for the title
         -- When the title is longer, only the end of the path name is shown.
