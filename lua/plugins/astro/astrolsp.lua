@@ -25,7 +25,6 @@ return {
     },
     servers = {
       "lua_ls", -- lua
-      "nil_ls", -- nix
     },
 
     -- Configure buffer local auto commands to add when attaching a language server
