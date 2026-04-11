@@ -25,8 +25,6 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = true, -- sets vim.opt.wrap
-        title = true, -- Set the title of window to `filename [+=-] (path) - NVIM`
-        titlelen = 20,
         smartindent = false,
         linebreak = true,
       },
