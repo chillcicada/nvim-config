@@ -32,6 +32,10 @@ return {
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+        loaded_node_provider = 0,
+        loaded_perl_provider = 0,
+        loaded_ruby_provider = 0,
+        loaded_python3_provider = 0,
       },
     },
     -- Mappings can be configured through AstroCore as well.
