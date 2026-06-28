@@ -12,9 +12,6 @@ return {
 
         -- install formatters
         "stylua",
-
-        -- install any other package
-        "tree-sitter-cli",
       },
     },
   },
